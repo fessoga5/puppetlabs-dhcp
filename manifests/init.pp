@@ -95,7 +95,7 @@ class dhcp (
 
   #
   # Build the dhcpd.pools
-  concat { "${dhcp_dir}/dhcpd.pools": force => true,}
+  concat { "${dhcp_dir}/dhcpd.pools": force => true, }
 
   concat::fragment { 'dhcp-pools-header':
     target  => "${dhcp_dir}/dhcpd.pools",
